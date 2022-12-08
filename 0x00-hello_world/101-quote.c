@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - this is the main function
+ * main- this is the main function
  *
  * Description: This function prints to STDERR
- * Returns: 1 (returns to standard error)
+ * Return: returns a value of 1 and prints to standard error
  */
 int main(void)
 {
