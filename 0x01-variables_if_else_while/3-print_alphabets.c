@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * main- This is the main function
+ *
+ * Description: This function prints all caps of alphabets a-zA-Z
+ * Return: This function returns 0
+ */
+int main(void)
+{
+	char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return (0);
+}
