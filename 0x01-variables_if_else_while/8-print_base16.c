@@ -9,14 +9,16 @@ int main(void)
 {
 	int num = 0;
 	int ascii = 88;
+	char ch = 'a';
 	while (num <= 102)
 	{
 		if (num > 9)
 		{
 			num = num + ascii;
-				putchar(num + '0');
-				ascii++;
-				num--;
+			putchar(ch);
+			ascii++;
+			ch++;
+			num--;
 		}
 		putchar(num + '0');
 		num++;
