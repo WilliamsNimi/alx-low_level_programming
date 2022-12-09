@@ -8,7 +8,9 @@
 int main(void)
 {
 	int num = 0;
+
 	char ch = 'a';
+
 	while (ch <= 'f')
 	{
 		if (num > 9)
