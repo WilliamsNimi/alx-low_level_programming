@@ -20,8 +20,11 @@ int main(void)
 			ch++;
 			num--;
 		}
-		putchar(num + '0');
-		num++;
+		else
+		{
+			putchar(num + '0');
+			num++;
+		}
 	}
 	putchar('\n');
 	return (0);
