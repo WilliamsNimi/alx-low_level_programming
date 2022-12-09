@@ -8,17 +8,13 @@
 int main(void)
 {
 	int num = 0;
-	int ascii = 88;
 	char ch = 'a';
-	while (num <= 102)
+	while (ch <= 'f')
 	{
 		if (num > 9)
 		{
-			num = num + ascii;
 			putchar(ch);
-			ascii++;
 			ch++;
-			num--;
 		}
 		else
 		{
