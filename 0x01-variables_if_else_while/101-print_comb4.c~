@@ -13,10 +13,10 @@ int main(void)
 	int counter = 1;
 	int counter2 = 2;
 
-	for (a = 0; a <= 7; a++)
+	for (a = 0; a <= 9; a++)
 	{
 		b = counter;
-		while (b <= 8)
+		while (b <= 9)
 		{
 			c = counter2;
 			while (c <= 9)
