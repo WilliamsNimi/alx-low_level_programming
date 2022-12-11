@@ -21,7 +21,7 @@ int main(void)
 			c = counter2;
 			while (c <= 9)
 			{
-				if (a != b && b != c && a != c && a < b $$ b < c)
+				if (a != b && b != c && a != c && a < b && b < c)
 				{
 					putchar(a + '0');
 					putchar(b + '0');
