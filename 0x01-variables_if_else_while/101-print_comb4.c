@@ -35,9 +35,9 @@ int main(void)
 				c++;
 			}
 			b++;
+			counter2++;
 		}
 		counter++;
-		counter2++;
 	}
 	putchar('\n');
 	return (0);
