@@ -8,10 +8,12 @@
 int main(void)
 {
 	int a;
-	int b = 1;
-	
+	int b;
+	int counter = 1;
+
 	for (a = 0; a <= 9; a++)
 	{
+		b = counter;
 		while (b <= 9)
 		{
 			if (a != b)
@@ -24,8 +26,9 @@ int main(void)
 					putchar(' ');
 				}
 			}
+			b++;
 		}
-		b++;
+		counter++;
 	}
 	putchar('\n');
 	return (0);
