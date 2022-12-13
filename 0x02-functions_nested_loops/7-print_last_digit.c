@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * print_last_digit- This is the print_last_digit function
  *
