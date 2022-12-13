@@ -9,6 +9,8 @@
 void times_table(void)
 {
 	int col0, col1, col2, col3, col4, col5, col6, col7, col8, col9;
+	int counter;
+
 	col0 = 0;
 	col1 = 0;
 	col2 = 0;
@@ -19,7 +21,7 @@ void times_table(void)
 	col7 = 0;
 	col8 = 0;
 	col9 = 0;
-	int counter = 0;
+	counter = 0;
 
 	while (counter < 9)
 	{
