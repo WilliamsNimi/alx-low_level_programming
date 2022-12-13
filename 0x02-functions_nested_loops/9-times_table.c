@@ -19,7 +19,7 @@ void times_table(void)
 	col7 = 0;
 	col8 = 0;
 	col9 = 0;
-	counter = 0;
+	int counter = 0;
 
 	while (counter < 9)
 	{
@@ -70,5 +70,6 @@ void times_table(void)
 		col8 += 8;
 		col9 += 9;
 		_putchar('\n');
+		counter += 1;
 	}
 }
