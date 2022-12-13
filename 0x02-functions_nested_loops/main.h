@@ -7,8 +7,5 @@
  *
  * Return: It returns 0
  */
-int _putchar(char __c)
-{
-	return (write(1, &__c, 1));
-}
+int _putchar(char __c);
 void print_alphabet(void);
