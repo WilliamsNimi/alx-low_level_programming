@@ -1,17 +1,5 @@
 #include <stdio.h>
-/**
- * _putchar- This is the _putchar function
- *
- * Description: This function prints character
- * @character: The character to be written to screen
- *
- * Return: The function returns 0
- */
-int _putchar(char character)
-{
-	_fputchar(character);
-	return (0);
-}
+#include "main.h"
 /**
  * main- This is the main function
  *
@@ -20,14 +8,13 @@ int _putchar(char character)
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char *print_string = "_putchar";
+
+	while (*print_string != '\0')
+	{
+		_putchar(*print_string);
+		print_string++;
+	}
 	_putchar('\n');
 	return (0);
 }

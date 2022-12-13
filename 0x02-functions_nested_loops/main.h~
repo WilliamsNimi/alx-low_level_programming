@@ -1,0 +1,14 @@
+#ifndef PUT_CHAR
+#define PUT_CHAR
+/**
+ * _putchar- This is the skeleton of the _putchar function
+ *
+ * Description: This function prints characters to screen
+ * @__c: this is the character to be printed on screen
+ * Return: It returns 0
+ */
+extern int _putchar(int __c)
+{
+	return (0);
+}
+#endif
