@@ -16,5 +16,5 @@ int print_last_digit(int n)
 	if (modu < 0)
 		modu *= -1;
 	printf("%d%d", modu, modu);
-	return (0);
+	return;
 }
