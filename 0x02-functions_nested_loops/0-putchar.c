@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 /**
  * _putchar- This is the _putchar function
  *
