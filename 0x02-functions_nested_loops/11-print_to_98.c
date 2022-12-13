@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_to_98- This is the print_to_98 function
  *
@@ -9,12 +10,13 @@
  */
 void print_to_98(int n)
 {
+	if (n == 98)
+		printf("%d", n);
 	while (n != 98)
 	{
 		if (n > 98)
 		{
-			_putchar(n);
-			_putchar(',');
+			printf("%d,", n);
 			if (n != 98)
 			{
 				_putchar(' ');
@@ -23,13 +25,12 @@ void print_to_98(int n)
 		}
 		else if (n < 98)
 		{
-			_putchar(n);
-			_putchar(',');
+			printf("%d,", n);
 			if (n != 98)
 				_putchar(' ');
 			n++;
 		}
 		else
-			_putchar(n);
+			printf("%d", n);
 	}
 }
