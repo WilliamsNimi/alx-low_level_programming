@@ -5,9 +5,9 @@
  * Description: This function prints a new character to screen with a new line
  * Return: it returns 0
  */
-int _putchar(void)
+int _putchar(char *print_string)
 {
-	char *print_string = "_putchar";
+	*print_string = "_putchar";
 
 	while (*print_string != '\0')
 	{
