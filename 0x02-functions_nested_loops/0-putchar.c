@@ -8,7 +8,7 @@
 int _putchar(char ch)
 {
 	int count = 0;
-	char cha[];
+	char cha[30];
 
 	cha[] = "_putchar";
 
