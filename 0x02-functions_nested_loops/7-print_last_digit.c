@@ -10,5 +10,7 @@
  */
 int print_last_digit(int n)
 {
-	return (((n % 10) * 10) + (n % 10));
+	int modu = n % 10;
+	int moduFinal = (modu * 10 ) + modu;
+	return (moduFinal);
 }
