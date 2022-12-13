@@ -6,7 +6,7 @@
  * Description: This is a function that sums natural numbers multiples of 3 & 5
  * Return: It returns nothing
  */
-void natural()
+void natural(void)
 {
 	int counter = 1;
 	int sum = 0;
