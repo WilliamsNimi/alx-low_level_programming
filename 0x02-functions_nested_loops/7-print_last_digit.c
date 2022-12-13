@@ -11,6 +11,13 @@
 int print_last_digit(int n)
 {
 	int modu = n % 10;
-	int moduFinal = (modu * 10 ) + modu;
-	return (moduFinal);
+	char moduC[20];
+	char moduC2[20];
+	int c;
+
+	sprintf(moduC, "%d", modu);
+	sprintf(moduC2, "%d", modu);
+	strcat(moduC, moduC2);
+	c = atoi(moduC);
+	return (c);
 }
