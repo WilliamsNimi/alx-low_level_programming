@@ -11,12 +11,4 @@ int _putchar(char __c)
 {
 	return (write(1, &__c, 1));
 }
-int print_alphabet(void)
-{
-	char alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		_putchar(alpha);
-	_putchar('\n');
-	return (0);
-}
+void print_alphabet(void);
