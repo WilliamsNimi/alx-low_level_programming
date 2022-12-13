@@ -13,6 +13,6 @@ int print_last_digit(int n)
 {
 	int modu = n % 10;
 
-	_putchar(modu + '0');
+	printf(modu);
 	return (modu);
 }
