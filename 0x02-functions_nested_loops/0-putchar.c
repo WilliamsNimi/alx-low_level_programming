@@ -6,7 +6,7 @@
  * Description: This function prints a new character to screen with a new line
  * Return: it returns 0
  */
-int x_putchar(void)
+int _putchar(void)
 {
 	char *print_string = "_putchar";
 
