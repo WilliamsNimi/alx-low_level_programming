@@ -13,6 +13,8 @@ int print_last_digit(int n)
 {
 	int modu = n % 10;
 
-	printf("%d", modu);
-	return (modu);
+	if (modu < 0)
+		modu *= -1;
+	printf("%d%d", modu, modu);
+	return (0);
 }
