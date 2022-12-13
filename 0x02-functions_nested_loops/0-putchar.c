@@ -5,14 +5,16 @@
  * Description: This function prints a new character to screen with a new line
  * Return: it returns 0
  */
-int _putchar(char *print_string)
+int _putchar(char ch)
 {
-	*print_string = "_putchar";
+	int count = 0;
 
-	while (*print_string != '\0')
+	ch[] = "_putchar";
+
+	while (ch[count] != '\0')
 	{
-		_putchar(*print_string);
-		print_string++;
+		_putchar(ch[count]);
+		count++;
 	}
 	_putchar('\n');
 	return (0);
