@@ -3,6 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ * concatenate- This is the concatenate function
+ *
+ * Description: This function prints 2 int on the same line
+ * @n: This is the int to be printed twice
+ * Return: No return. It is a void function
+ */
+void concatenate(int n)
+{
+	printf("%d%d", n, n);
+}
+/**
  * print_last_digit- This is the print_last_digit function
  *
  * Description: This function prints the last digit of a given number
@@ -15,6 +26,5 @@ int print_last_digit(int n)
 
 	if (modu < 0)
 		modu *= -1;
-	printf("%d%d", modu, modu);
-	return;
+	return (concatenate(modu));
 }
