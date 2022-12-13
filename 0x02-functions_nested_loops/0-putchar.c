@@ -8,9 +8,7 @@
 int _putchar(char ch)
 {
 	int count = 0;
-	char cha[];
-
-	cha[30] = "_putchar";
+	char cha[30] = "_putchar";
 
 	while (cha[count] != '\0')
 	{
