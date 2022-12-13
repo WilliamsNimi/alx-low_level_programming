@@ -8,14 +8,16 @@
 int _putchar(char ch)
 {
 	int count = 0;
+	char cha[];
 
-	ch[] = "_putchar";
+	cha[] = "_putchar";
 
-	while (ch[count] != '\0')
+	while (cha[count] != '\0')
 	{
-		_putchar(ch[count]);
+		_putchar(cha[count]);
 		count++;
 	}
 	_putchar('\n');
+	_putchar(ch);
 	return (0);
 }
