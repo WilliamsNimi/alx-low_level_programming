@@ -14,15 +14,16 @@ int fibonacci(int n)
 	long secondFib = 1;
 	long newFib = 1;
 
-	printf("%lu,", firstFib);
-	printf("%lu,", secondFib);
+	printf("%lu, ", firstFib);
+	printf("%lu, ", secondFib);
 	for (int i = 0; i < loopcounter; i++)
 	{
 		newFib = firstFib + secondFib;
 		firstFib = secondFib;
 		secondFib = newFib;
-		printf("%lu,", newFib);
+		printf("%lu, ", newFib);
 	}
+	printf("\n");
 }
 /**
  * main- This is the main function
