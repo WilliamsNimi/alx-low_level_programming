@@ -6,7 +6,7 @@
  * Description: This is a function that sums natural numbers multiples of 3 & 5
  * Return: It returns nothing
  */
-void natural(void)
+int natural(void)
 {
 	int counter = 1;
 	int sum = 0;
@@ -17,7 +17,6 @@ void natural(void)
 		{
 			sum += counter;
 		}
-		counter++;
 	}
 	printf("%d\n", sum);
 }
