@@ -7,16 +7,17 @@
  * @n: The nth element to be calculated
  * Return: Returns the value
  */
-int fibonacci(int n)
+void fibonacci(int n)
 {
 	int loopcounter = n - 2;
 	long firstFib = 1;
 	long secondFib = 1;
 	long newFib = 1;
+	int i;
 
 	printf("%lu, ", firstFib);
 	printf("%lu, ", secondFib);
-	for (int i = 0; i < loopcounter; i++)
+	for (i = 0; i < loopcounter; i++)
 	{
 		newFib = firstFib + secondFib;
 		firstFib = secondFib;
