@@ -21,8 +21,8 @@ void times_table(void)
 			printf("%d", outCount * j);
 			if (j < 9)
 				printf(",");
-			if ((outCount * j) == 0 && (outCount * (j+1)) == 0)
-				printf(" ");
+			if ((outCount * j) == 0 && (outCount * (j + 1)) == 0)
+				printf("  ");
 		}
 		printf("\n");
 	}
