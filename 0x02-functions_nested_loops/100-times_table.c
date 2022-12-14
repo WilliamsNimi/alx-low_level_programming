@@ -19,7 +19,7 @@ void print_times_table(int n)
 			{
 				if ((outCount * j) < 10 && (outCount * j) != 0)
 					printf("   ");
-				else if ((outCount * j) != 0)
+				else if ((outCount * j) != 0 && (outCount * j) < 100)
 					printf("  ");
 				else if ((outCount * j) >= 100)
 					printf(" ");
