@@ -13,7 +13,7 @@ void evenfibonacci(void)
 	long newFib = 1;
 	long sum = 0;
 
-        newFib = firstFib + secondFib;
+	newFib = firstFib + secondFib;
 	while (newFib < 4000000)
 	{
 		if (newFib % 2 == 0)
@@ -24,7 +24,7 @@ void evenfibonacci(void)
 		firstFib = secondFib;
 		secondFib = newFib;
 	}
-	printf("%lu\n", sum);
+	printf("%lu\n", sum - 2);
 }
 /**
  * main- This is the main function
