@@ -3,7 +3,7 @@
 /**
  * fibonacci- This is the fibonacci function
  *
- * Description: This is a function that prints the first 50 fibs
+ * Description: This is a function that prints fibs
  * @n: The nth element to be calculated
  * Return: Returns the value
  */
