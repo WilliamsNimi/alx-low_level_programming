@@ -18,7 +18,7 @@ int natural(void)
 			sum += counter;
 		}
 	}
-	printf("%d\n", sum);
+	return sum;
 }
 /**
  * main- This is the main function

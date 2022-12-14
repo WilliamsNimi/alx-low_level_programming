@@ -21,6 +21,8 @@ void print_times_table(int n)
 					printf("   ");
 				else if ((outCount * j) != 0)
 					printf("  ");
+				else if ((outCount * j) >= 100)
+					printf(" ");
 				printf("%d", outCount * j);
 				if (j < n)
 					printf(",");
