@@ -15,5 +15,5 @@ int print_last_digit(int n)
 	if (modu < 0)
 		modu *= -1;
 	_putchar(modu + '0');
-	return modu;
+	return (modu);
 }
