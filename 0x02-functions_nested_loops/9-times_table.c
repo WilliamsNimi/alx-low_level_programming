@@ -14,9 +14,9 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			if ((outCount * j) < 10)
+			if ((outCount * j) < 10 && (outCount * j) != 0)
 				printf("  ");
-			else
+			else if ((outCount * j) != 0)
 				printf(" ");
 			printf("%d", outCount * j);
 			if (j < 9)
