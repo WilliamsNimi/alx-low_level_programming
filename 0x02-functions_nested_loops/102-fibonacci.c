@@ -22,7 +22,7 @@ void fibonacci(int n)
 		firstFib = secondFib;
 		secondFib = newFib;
 		printf("%lu", newFib);
-		if (i != loopcounter)
+		if (i != (loopcounter - 1))
 			printf(", ");
 	}
 	printf("\n");
