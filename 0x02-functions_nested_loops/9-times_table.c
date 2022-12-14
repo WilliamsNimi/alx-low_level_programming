@@ -22,7 +22,8 @@ void times_table(void)
 			if (j < 9)
 				printf(",");
 			if ((outCount * j) == 0 && (outCount * (j + 1)) == 0)
-				printf("  ");
+				if (j < 9)
+					printf("  ");
 		}
 		printf("\n");
 	}
