@@ -9,13 +9,12 @@
  */
 void fibonacci(int n)
 {
-	int loopcounter = n - 2;
+	int loopcounter = n - 1;
 	long firstFib = 1;
 	long secondFib = 1;
 	long newFib = 1;
 	int i;
 
-	printf("%lu, ", firstFib);
 	printf("%lu, ", secondFib);
 	for (i = 0; i < loopcounter; i++)
 	{
