@@ -18,17 +18,19 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				if ((outCount * j) < 10 && (outCount * j) != 0)
-					printf("  ");
+					printf("   ");
 				else if ((outCount * j) != 0)
-					printf(" ");
+					printf("  ");
 				printf("%d", outCount * j);
 				if (j < n)
 					printf(",");
 				if ((outCount * j) == 0 && (outCount * (j + 1)) == 0)
 					if (j < n)
-						printf("  ");
+						printf("   ");
 			}
 			printf("\n");
 		}
 	}
+	else if (n == 0)
+		printf("%d\n", 0);
 }
