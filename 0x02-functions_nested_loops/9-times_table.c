@@ -8,23 +8,20 @@
  */
 void times_table(void)
 {
-	int outCount;
-	int counter;
+	int outCount, j;
 
-	for (outCount = 0; outCount < 9; outCount++)
+	for (outCount = 0; outCount <= 9; outCount++)
 	{
-		counter = 0;
-		printf("%d, ", 0);
-		for (int j = 0; j < 8; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			counter = j + j;
-			printf("%d, ", counter);
+			printf("%d", outCount * j);
+			if (!(outCount == 9 && j == 9))
+				printf(",");
+			if ((outCount * j) < 10)
+				printf("  ");
+			else
+				printf(" ");
 		}
 		printf("\n");
 	}
-}
-int main(void)
-{
-	times_table();
-	return (0);
 }
