@@ -3,7 +3,7 @@
  * print_diagonal- This is the print diagonal function
  *
  * Description: This function prints diagonals the size of the input
- * @size: The size of the diagonal
+ * @size: The size of a diagonal
  * Return: It returns nothing. It is the void function
  */
 void print_diagonal(int size)
@@ -19,6 +19,7 @@ void print_diagonal(int size)
 		_putchar('\\');
 		_putchar('\n');
 	}
+	_putchar('\n');
 	if (size <= 0)
 		_putchar('\n');
 }
