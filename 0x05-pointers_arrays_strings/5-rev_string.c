@@ -14,11 +14,9 @@ void rev_string(char *s)
 
 	while (*s != '\0')
 	{
-		_putchar(*s);
 		count++;
 		s++;
 	}
-	_putchar('\n');
 	count2 = count;
 	while (count2 > 0)
 	{
