@@ -8,3 +8,4 @@ void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
+char *_strcpy(char *dest, char *src);
