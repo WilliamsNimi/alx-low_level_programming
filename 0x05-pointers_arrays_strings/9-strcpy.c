@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strcpy- this strcpy function
  *
@@ -11,5 +12,6 @@ char *_strcpy(char *dest, char *src)
 {
 	for (; (*dest = *src); dest++, src++)
 		;
+	printf("%s\n", dest);
 	return (dest);
 }
