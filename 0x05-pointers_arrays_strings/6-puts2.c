@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * puts2- This function prints strings
+ *
+ * Description: This function prints string and a new line character
+ * @str: String to be printed
+ * Return: This is a void function. Doesn't return anything
+ */
+void puts2(char *str)
+{
+	int count = 1;
+
+	while (*str != '\0')
+	{
+		if (count % 2 == 0)
+		{
+			_putchar(*str);
+		}
+		str++;
+	}
+	_putchar('\n');
+}
