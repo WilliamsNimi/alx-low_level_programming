@@ -14,9 +14,11 @@ void rev_string(char *s)
 
 	while (*s != '\0')
 	{
+		_putchar(*s);
 		count++;
 		s++;
 	}
+	_putchar('\n');
 	count2 = count;
 	while (count2 > 0)
 	{
@@ -25,8 +27,7 @@ void rev_string(char *s)
 	}
 	while (i <= count)
 	{
-		*(s + count2) = *(s + count);
+		_putchar(*(s + count));
 		count = count - 1;
-		count2 = count2 + 1;
 	}
 }
