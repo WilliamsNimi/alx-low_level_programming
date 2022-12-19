@@ -12,6 +12,6 @@ char *_strcpy(char *dest, char *src)
 {
 	for (; (*dest = *src); dest++, src++)
 		;
-	printf("%s\n", dest);
+	printf("%s", dest);
 	return (dest);
 }
