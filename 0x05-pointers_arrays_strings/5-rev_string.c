@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rev_string- This is the reverse function
  *
@@ -27,6 +28,7 @@ void rev_string(char *s)
 	while (i <= count)
 	{
 		tmp = *s;
+		_putchar(*(s + count));
 		*s = *(s + count);
 		*(s + count) = tmp;
 		count = count - 1;
