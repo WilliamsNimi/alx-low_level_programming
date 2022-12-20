@@ -26,8 +26,8 @@ void puts_half(char *s)
 	count = count / 2;
 	while (i <= count)
 	{
-		if (*(s + count) != '\0')
-			_putchar(*(s + count));
+		if (*(s) != '\0')
+			_putchar(*(s));
 		count = count - 1;
 	}
 	_putchar('\n');
