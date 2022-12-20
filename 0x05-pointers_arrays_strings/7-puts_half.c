@@ -23,6 +23,7 @@ void puts_half(char *s)
 		--s;
 		count2--;
 	}
+	count = count / 2;
 	while (i <= count)
 	{
 		if (*(s + count) != '\0')
