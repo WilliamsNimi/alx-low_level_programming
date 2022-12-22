@@ -17,8 +17,8 @@ int _strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-	s1i = (unsigned char) s1[i];
-	s2i = (unsigned char) s2[i];
+	s1i = s1[i] + '0';
+	s2i = s2[i] + '0';
 
 	return (s1i - s2i);
 }
