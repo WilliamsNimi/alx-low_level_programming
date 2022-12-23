@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * cap_string-  This is a string upper function
  *
@@ -9,23 +10,21 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	char p;
 
 	while (*s != '\0')
 	{
 		if (i > 0)
 		{
-			p = s[i - 1];
-			if (p == ',' || p == ';' || p == '.' || p == '!' ||
-			    p == '?' || p == '"' || p == '(' || p == ')' ||
-			    p == '{' || p == '}' || p == ' ' || p == '\t' ||
-			    p == '\n')
+			if (*s == ',' || *s == ';' || *s == '.' || *s == '!' ||
+			    *s == '?' || *s == '"' || *s == '(' || *s == ')' ||
+			    *s == '{' || *s == '}' || *s == ' ' || *s == '\t' ||
+			    *s == '\n')
 			{
-				if (!(*s >= 65 && *s <= 90))
+				if (!(*(s + 1) >= 65 && *(s + 1) <= 90))
 				{
-					if (*s >= 97 && *s <= 122)
+					if (*(s + 1) >= 97 && *(s + 1) <= 122)
 					{
-						*s = *s - 32;
+						*(s + 1) = *(s + 1) - 32;
 					}
 				}
 			}
@@ -39,4 +38,13 @@ char *cap_string(char *s)
 		i--;
 	}
 	return (s);
+}
+int main(void)
+{
+	char str[] = "Expectations meets reality!";
+	char *ptr;
+
+	ptr = cap_string(str);
+	printf("%s", ptr);
+	return (0);
 }
