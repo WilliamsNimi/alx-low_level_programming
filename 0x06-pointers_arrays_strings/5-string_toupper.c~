@@ -1,0 +1,41 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * string_toupper-  This is a string upper function
+ *
+ * Description: THis function converts strings to upper case
+ * @str: The string to be converted
+ * Return: This function returns a string of characters
+ */
+char *string_toupper(char *str)
+{
+	int count = 0;
+
+	while (*str != '\0')
+	{
+		if (!(*str >= 65 && *str <= 90))
+		{
+			if (*str >= 97 && *str <= 122)
+			{
+				*str = *str - 32;
+			}
+		}
+		str++;
+		count++;
+	}
+	while (count > 0)
+	{
+		str--;
+		count--;
+	}
+	return (str);
+}
+int main(void)
+{
+	char str [] = "Trial";
+	char *ptr;
+
+	ptr = string_toupper(str);
+	printf("%s", ptr);
+	return (0);
+}
