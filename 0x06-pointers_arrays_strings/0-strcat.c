@@ -30,10 +30,12 @@ char *_strcat(char *dest, char *src)
 	while (revcount > 0)
 	{
 		dest--;
+		revcount--;
 	}
 	while (revcount2 > 0)
 	{
 		src--;
+		revcount2--;
 	}
 	for (i = 0; i < count2 && src[i] != '\0'; i++)
 	{
