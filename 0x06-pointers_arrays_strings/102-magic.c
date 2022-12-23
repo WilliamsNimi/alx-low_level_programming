@@ -1,10 +1,5 @@
-#include <stdio.h>
-/**
- * main- This is the main function
- *
- * Description: This function performs magic
- * Return: it returns an int
- */
+#include <stdio.>
+
 int main(void)
 {
 	int n;
