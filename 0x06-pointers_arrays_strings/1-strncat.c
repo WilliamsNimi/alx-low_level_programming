@@ -23,6 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (revcount > 0)
 	{
 		dest--;
+		revcount--;
 	}
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
