@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * cap_string-  This is a string upper function
  *
@@ -38,13 +37,4 @@ char *cap_string(char *s)
 		i--;
 	}
 	return (s);
-}
-int main(void)
-{
-	char str[] = "Expectations meets reality!";
-	char *ptr;
-
-	ptr = cap_string(str);
-	printf("%s", ptr);
-	return (0);
 }
