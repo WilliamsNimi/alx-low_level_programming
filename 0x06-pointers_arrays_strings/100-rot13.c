@@ -29,4 +29,5 @@ char *rot13(char *str)
 		str--;
 		count--;
 	}
+	return (str);
 }
