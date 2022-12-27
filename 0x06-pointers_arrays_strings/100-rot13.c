@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rot13- This is the rot13 function
  *
@@ -9,19 +10,18 @@
 char *rot13(char *str)
 {
 	int count = 0;
+	int shift = 13;
 
 	while (*str != '\0')
 	{
-		if ((*str > 77 && *str < 91) || (*str > 109 && *str < 123))
+		if (*str > 109 && *str != ' ')
 		{
-			*str = *str - 13;
+			shift = shift * -1;
 		}
-		else
-		{
-			*str = *str + 13;
-		}
+		*str = *str + shift;
 		str++;
 		count++;
+		shift = 13;
 	}
 	while (count > 0)
 	{
@@ -29,4 +29,11 @@ char *rot13(char *str)
 		count--;
 	}
 	return (str);
+}
+int main(void)
+{
+	char str2[] = "rotate by 13 places";
+
+        printf("%s", rot13(str2));
+	return (0);
 }
