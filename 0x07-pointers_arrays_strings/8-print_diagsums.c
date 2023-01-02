@@ -17,11 +17,14 @@ void print_diagsums(int *a, int size)
 		{
 			if ((i * j) % 2 == 0 && (i * j) % size != 0)
 			{
-				forward_sum += *a;
+				if (i != 0 && j != 0)
+				{
+					forward_sum += a[i][j];
+				}
 			}
 			else if ((i * j) % 2 != 0 && (i * j) % size == 0)
 			{
-				backward_sum += *a;
+				backward_sum += a[i][j];
 			}
 			a++;
 		}
