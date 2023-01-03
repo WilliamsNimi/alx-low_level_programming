@@ -9,43 +9,21 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, forward_sum = 0, backward_sum = 0;
+	int i, forward_sum = 0, backward_sum = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size * size; i++)
 	{
-		for (j = 0; j < size; j++)
+		if (i == 0 || i % (size + 1) == 0)
 		{
-			if ((i + j) % 2 == 0 && (i + j) % size != 0)
-			{
-				if (i == 0 && j == 0)
-				{
-					forward_sum += *a;
-				}
-			}
-			else if ((i + j) % size == 0)
-			{
-				if (i != 0 && j != 0)
-				{
-					backward_sum += *a;
-				}
-			}
-			a++;
+			forward_sum += a[i];
+		}
+		if (i % (size - 1) == 0 && (i + 1) != size * size)
+		{
+			backward_sum += a[i];
 		}
 	}
-	_putchar(forward_sum - '0');
+	_putchar(forward_sum + '0');
 	_putchar(',');
 	_putchar(' ');
-	_putchar(backward_sum - '0');
+	_putchar(backward_sum + '0');
 }
-/**
- *int main(void)
- *{
- *	int c3[3][3] = {
- *		{0,1,5},
- *		{10,11,12},
- *		{1000,101,102},
- *	};
- *	print_diagsums((int *) c3, 3);
- *	return (0);
- *}
-*/
