@@ -22,16 +22,35 @@ void print_diagsums(int *a, int size)
 			backward_sum += a[i];
 		}
 	}
-	while (forward_sum / 10 != 0)
-	{
-		_putchar((forward_sum % 10) + '0');
-		forward_sum = forward_sum / 10;
-	}
+	__putchar(forward_sum);
 	_putchar(',');
 	_putchar(' ');
-	while (backward_sum / 10 != 0)
+	__putchar(backward_sum);
+}
+/**
+ * __putchar- this is the __putchar function
+ *
+ * Description: This function prints integers using _putchar
+ * @value: The integer to be printed
+ * Return: returns nothing
+ */
+void __putchar(int value)
+{
+	if (value < 0)
 	{
-		_putchar((backward_sum % 10) + '0');
-		backward_sum = backward_sum / 10;
+		_putchar('_');
+		value = value * -1;
 	}
+
+	if (value == 0)
+	{
+		_putchar('0');
+	}
+
+	if (value / 10)
+	{
+		__putchar(value / 10);
+	}
+
+	_putchar(value % 10 + '0';
 }
