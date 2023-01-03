@@ -22,8 +22,16 @@ void print_diagsums(int *a, int size)
 			backward_sum += a[i];
 		}
 	}
-	_putchar(forward_sum + '0');
+	while (forward_sum / 10 != 0)
+	{
+		_putchar((forward_sum % 10) + '0');
+		forward_sum = forward_sum / 10;
+	}
 	_putchar(',');
 	_putchar(' ');
-	_putchar(backward_sum + '0');
+	while (backward_sum / 10 != 0)
+	{
+		_putchar((backward_sum % 10) + '0');
+		backward_sum = backward_sum / 10;
+	}
 }
