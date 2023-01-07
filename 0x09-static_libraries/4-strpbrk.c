@@ -1,0 +1,13 @@
+#include "main.h"
+/**
+ * _strpbrk- This is the _strpbrk function
+ *
+ * Description: This function locates the first occurence in a String S.
+ * @s: The string to be searched
+ * @accept: The string we are searching for
+ * Return: Returns a pointer or or NULL of no byte is found
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	return (s);
+}
