@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * greedy- This is the greedy function
+ *
+ * Description: This function implements the greedy algorithm
+ * @cents: The amount to be checked
+ * Return: This returns the number of change
+ */
+int greedy(int cents)
+{
+	int count = 0, a = cents;
+
+	while (a > 0)
+	{
+		if (a >= 25)
+		{
+			a = a - 25;
+			count = count + 1;
+		}
+		else if (a >= 10)
+		{
+			a = a - 10;
+			count = count + 1;
+		}
+		else if (a >= 5)
+		{
+			a = a - 5;
+			count = count + 1;
+		}
+		else if (a >= 2)
+		{
+			a = a - 2;
+			count = count + 1;
+		}
+		else
+		{
+			a = a - 1;
+			count = count + 1;
+		}
+	}
+	return (count);
+}
+/**
+ * main- This is the main function
+ *
+ * Description: This function implements the greedy algorithm
+ * @argc: This is the length of the arguments passed to the program
+ * @argv: This is the list of all the arguments for the program
+ * Return: returns 1 if the argumnent is less that or greater than 1
+ */
+int main(int argc, char *argv[])
+{
+	int a, count = 0;
+
+	if (argc != 2)
+	{
+		printf("%s\n", "Error");
+		return (1);
+	}
+	if (atoi(argv[1]))
+	{
+		a = atoi(argv[1]);
+	}
+	if (a < 0)
+	{
+		printf("%d\n", 0);
+	}
+	count = greedy(a);
+	printf("%d\n", count);
+	return (0);
+}
