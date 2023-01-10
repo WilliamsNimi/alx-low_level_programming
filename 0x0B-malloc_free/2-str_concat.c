@@ -3,7 +3,6 @@
 #include <string.h>
 /**
  * str_concat- This is the str_concat function
- *
  * Description: This function makes a copy of a string into memory
  * @s1: The string to be joined
  * @s2: The string to be joined
@@ -16,10 +15,10 @@ char *str_concat(char *s1, char *s2)
 
 	size1 = strlen(s1);
 	size2 = strlen(s2);
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
+	if (s1 == NULL)
+		size1 = 0;
+	if (s2 == NULL)
+		size2 = 0;
 	new_str = malloc(size1 + size2 + 1);
 	if (new_str == NULL)
 	{
