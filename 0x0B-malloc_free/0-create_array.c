@@ -2,12 +2,12 @@
 /**
  * create_array- This is the create array function
  *
- * Description: This function creates an array and initializes it with characters
+ * Description: This function creates an array & initializes it with characters
  * @size: The size of the array
  * @c: the character to initialize the array with
  * Return: Returns a pointer or NULL
  */
-char *create_array(unisigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array;
 	int i;
