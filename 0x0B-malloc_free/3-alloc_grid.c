@@ -8,7 +8,7 @@
  * @height: the height of the entire array
  * Return: returns the array
  */
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int i, j;
 	int **array;
