@@ -2,7 +2,6 @@
 #include <stdlib.h>
 /**
  * alloc_grid- This is the alloc_grid function
- *
  * Description: This function allocates memory to a 2x2 array
  * @width: the width of a row
  * @height: the height of the entire array
@@ -14,17 +13,21 @@ int **alloc_grid(int width, int height)
 	int **array;
 
 	if (width <= 0 || height <= 0)
+		return (NULL);
+	array = (int **)malloc(height * sizeof(int *));
+	if (array == NULL)
 	{
+		free(array);
 		return (NULL);
 	}
-	array = (int**)malloc(height * sizeof(int *));
-	if (array == NULL)
-		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		array[i] = (int*)malloc(width * sizeof(int));
+		array[i] = (int *)malloc(width * sizeof(int));
 		if (array[i] == NULL)
+		{
+			free(array[i]);
 			return (NULL);
+		}
 	}
 	for (i = 0; i < height; i++)
 	{
