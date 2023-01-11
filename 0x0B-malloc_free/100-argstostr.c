@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 #include <stdlib.h>
 /**
  * argstostr- This is the argstostr function
