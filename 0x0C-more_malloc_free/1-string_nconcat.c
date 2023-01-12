@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat- This is the string_nconcat function
  * Description: This function concats nbytes of string 2 to string 1
@@ -13,6 +14,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j;
 	char *s3;
 
+	if (s1 == NULL)
+		s1[0] = '\0';
+	if (s2 == NULL)
+		s2[0] = '\0';
 	if (n >= strlen(s2))
 		n = strlen(s2);
 
