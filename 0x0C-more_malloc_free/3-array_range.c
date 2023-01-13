@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * array_range- This is the array_range function
  * Description: This function contains all the values in a range
