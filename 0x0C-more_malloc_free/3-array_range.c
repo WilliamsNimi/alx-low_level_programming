@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	if (min == max)
 	{
-		memset(array, 1, (1 * sizeof(int)));
+		memset(array, 1, (2 * sizeof(int)));
 	}
 	for (i = min; i < max; i++)
 	{
