@@ -17,6 +17,10 @@ int *array_range(int min, int max)
 	array = malloc(((max - min) + 1) * sizeof(int));
 	if (array == NULL)
 		return (NULL);
+	if (min == max)
+	{
+		memset(array, 1, (1 * sizeof(int)));
+	}
 	for (i = min; i < max; i++)
 	{
 		array[j] = i;
