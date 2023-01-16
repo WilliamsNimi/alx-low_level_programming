@@ -1,4 +1,3 @@
-#ifndef dog.h
 #include <stdio.h>
 /**
  * struct dog - This is a dog struct
@@ -14,4 +13,3 @@ struct dog
 	float age;
 	char *owner;
 };
-#endif
