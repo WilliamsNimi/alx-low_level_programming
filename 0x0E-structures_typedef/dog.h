@@ -8,10 +8,10 @@
  *
  * Description: This struct defines a dog with a name, age and owner
  */
-typedef struct dog
+struct dog
 {
 	char *name;
-	int age;
+	float age;
 	char *owner;
 };
 #endif
