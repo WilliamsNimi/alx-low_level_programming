@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * new_dog: A fuction of type dog_t
+ * new_dog- A fuction of type dog_t
  * Description: This function creates a new dog
  * @name: The name of the new dog
  * @age: The age of the new dog
@@ -11,9 +11,13 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *dog;
+	char *name2, owner2;
 
+	name2 = name;
+	owner2 = owner;
 	dog = malloc(sizeof(struct dog));
 	if (dog == NULL)
+		free(dog);
 		return (NULL);
 	dog->name = name;
 	dog->age = age;
