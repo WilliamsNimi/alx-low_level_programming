@@ -1,4 +1,5 @@
-#ifndef dog
+#ifndef dog_heads
+#define dog_heads
 /**
  * struct dog - This is a dog struct
  * @name: Every dog must have a name
