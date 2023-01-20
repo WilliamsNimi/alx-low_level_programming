@@ -2,6 +2,6 @@
 #include "variadic_functions.h"
 int main(void)
 {
-	print_numbers(NULL, 4, 0, 98, 1024, 402);
+	print_strings(", ", 4, "Jay", "Django", "huo", "poli");
 	return (0);
 }
