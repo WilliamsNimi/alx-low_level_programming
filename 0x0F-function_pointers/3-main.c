@@ -4,7 +4,7 @@
 #include <string.h>
 /**
  * main- this is the main function
- * Description: This function is the main function and acts as a calculator screen
+ * Description: This function is the main function & acts as a calculator screen
  * @argc: The number of arguments supplied
  * @argv: The list of arguments
  * Return: Returns 0
@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 {
 	int operand1, operand2;
 	char *operator;
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		printf("%s",argv[1]);
 		exit(98);
 	}
 
@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 	operand1 = atoi(argv[1]);
 	operand2 = atoi(argv[3]);
 
-	(*get_op_func(operator))(operand1, operand2);
+	operation = get_op_func(operator);
+	printf("%d\n", operation(operand1, operand2));
 	return (0);
 }
