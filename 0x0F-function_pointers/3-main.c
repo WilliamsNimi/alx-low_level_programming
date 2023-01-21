@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * main- this is the main function
  * Description: This function is the main function and acts as a calculator screen
@@ -11,16 +12,19 @@
 int main(int argc, char *argv[])
 {
 	int operand1, operand2;
-	char operator;
+	char *operator;
 
-	if (argc != 3)
+	if (argc != 4)
 	{
 		printf("Error\n");
+		printf("%s",argv[1]);
 		exit(98);
 	}
 
+	operator = argv[2];
 	operand1 = atoi(argv[1]);
-	operand2 = atoi(argv[2]);
+	operand2 = atoi(argv[3]);
 
-	get_op_func(operator);
+	(*get_op_func(operator))(operand1, operand2);
+	return (0);
 }
