@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_name- This is the print_name function
  * Description: This function prints a name
@@ -9,5 +10,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name != NULL && f != NULL)
+		f(name);
+	else
+		exit(98);
 }
