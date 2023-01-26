@@ -9,16 +9,19 @@
  */
 size_t print_list(const list_t *h)
 {
+	const list_t *currentNode;
 	size_t nodes;
 
-	while (h->next != NULL)
+	currentNode = malloc(sizeof(list_t));
+	currentNode = h;
+	while (currentNode != NULL)
 	{
 		if (h->str != NULL)
-			printf("[%d] %s", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		else
-			printf("[0] (nil)");
+			printf("[0] (nil)\n");
 		nodes = nodes + 1;
-		h++;
+		currentNode = currentNode->next;
 	}
 	return (nodes);
 }
