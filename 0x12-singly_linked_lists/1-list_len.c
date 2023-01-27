@@ -10,7 +10,7 @@
 size_t list_len(const list_t *h)
 {
 	const list_t *currentNode;
-	size_t nodes;
+	int nodes;
 
 	nodes = 0;
 	currentNode = malloc(sizeof(list_t));
