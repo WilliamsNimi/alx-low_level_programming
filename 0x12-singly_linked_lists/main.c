@@ -8,9 +8,9 @@ int main(void)
 	list_t *head;
 
 	head = NULL;
-	add_node(&head, "Alexandro");
-	add_node(&head, "Asaia");
-	add_node(&head, "Augustin");
+	add_node_end(&head, "Alexandro");
+	add_node_end(&head, "Asaia");
+	add_node_end(&head, "Augustin");
 	print_list(head);
 	return (0);
 }
