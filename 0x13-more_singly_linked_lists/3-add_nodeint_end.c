@@ -20,6 +20,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		free(newNode);
 		return (NULL);
 	}
+	if (temp == NULL)
+	{
+		free(temp);
+		return (NULL);
+	}
 	if (*head == NULL)
 	{
 		*head = newNode;
