@@ -2,8 +2,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 #include <ctype.h>
+/**
+ * pow- This is the pow function
+ * Description: find the power of a value
+ * @number: This is the number to be raised
+ * @exponent: This is the exponent by which the number is to be raised
+ * Return: Returns the power of the number raised to the exponent
+ */
+int pows(int number, int exponent)
+{
+	int answer = 1;
+	while (exponent > 0)
+	{
+		answer = answer * number;
+	}
+	return (answer);
+}
 /**
  * binary_to_uint- this is the binary to unsigned int function
  * Description: This function converts binary numbers to integers
@@ -23,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (isdigit(*b) != 0)
 		{
-			val = val + ((*b - '0') * pow(2, counter));
+			val = val + ((*b - '0') * pows(2, counter));
 		}
 		else
 			return (0);
