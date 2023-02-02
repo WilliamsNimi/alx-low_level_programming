@@ -16,6 +16,7 @@ int pows(int number, int exponent)
 	while (exponent > 0)
 	{
 		answer = answer * number;
+		exponent--;
 	}
 	return (answer);
 }
