@@ -39,7 +39,10 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (isdigit(*b) != 0)
 		{
-			val = val + ((*b - '0') * pows(2, counter));
+			if ((*b - '0') == 0 || (*b - '0') == 1)
+				val = val + ((*b - '0') * pows(2, counter));
+			else
+				return (0);
 		}
 		else
 			return (0);
