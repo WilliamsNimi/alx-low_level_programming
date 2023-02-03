@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * pow- This is the pow function
+ * pows- This is the pow function
  * Description: find the power of a value
  * @number: This is the number to be raised
  * @exponent: This is the exponent by which the number is to be raised
@@ -13,6 +13,7 @@
 int pows(int number, int exponent)
 {
 	int answer = 1;
+
 	while (exponent > 0)
 	{
 		answer = answer * number;
