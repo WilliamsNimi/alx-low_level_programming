@@ -3,7 +3,10 @@
 #include "main.h"
 int main(void)
 {
-	print_binary(98);
+	int n;
+
+	n = get_bit(98, 5);
+	printf("%d\n", n);
 
 	return (0);
 }
