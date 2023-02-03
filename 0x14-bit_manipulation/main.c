@@ -3,9 +3,7 @@
 #include "main.h"
 int main(void)
 {
-	unsigned int n;
+	print_binary(98);
 
-	n = binary_to_uint("101");
-	printf("%u\n", n);
 	return (0);
 }
