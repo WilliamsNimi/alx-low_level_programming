@@ -13,10 +13,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int val = *n;
 	unsigned long int mask = 1 << val;
 
-	if ((val & mask) | (1 << index))
-	{
-		(val & mask) | (1 << index);
-		return (1);
-	}
-	return (-1);
+	((val & mask) | (1 << index));
+	return (1);
 }
