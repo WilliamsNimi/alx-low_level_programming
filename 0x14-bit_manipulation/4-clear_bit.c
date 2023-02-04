@@ -10,7 +10,7 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int val = n;
+	unsigned long int val = *n;
 	unsigned long int mask = 1 << val;
 	if ((val & mask) | (0 << index))
 		return (1);
