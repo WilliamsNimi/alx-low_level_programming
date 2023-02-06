@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <unistd.h>
 /**
  * read_textfile- This is the read_textfile function
  * Description: This function reads and prints text files to standard output
@@ -12,6 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t count;
 	FILE *new_file;
+	char ch;
 
 	if (filename == NULL)
 		return (0);
@@ -21,12 +23,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	while (count < letters)
+	do
 	{
-		ch = fgetc(new_file);
-		write(2, ch, 1);
-		count = count + 1;
-	}
+		if (letters > 0)
+		{
+			ch = fgetc(new_file);
+			write(2, &ch, 1);
+			count = count + 1;
+		}
+		letters--;
+	} while (letters > 0);
 	fclose(new_file);
 	return (count);
 }
