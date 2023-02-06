@@ -3,14 +3,14 @@
 #include "main.h"
 int main(int ac, char **av)
 {
-	ssize_t n;
+	int res;
 
-	if (ac != 2)
+	if (ac != 3)
 	{
 		dprintf(2, "Usage: %s filename\n", av[0]);
 		exit(1);
 	}
-	n = read_textfile(av[1], 114);
-	printf("\n(printed chars: %li)\n", n);
+	res = create_file(av[1], av[2]);
+	printf("-> %i)\n", res);
 	return (0);
 }
