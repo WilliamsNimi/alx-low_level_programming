@@ -1,3 +1,4 @@
+#include <sys/stat.h>
 #include <unistd.h>
 #include "main.h"
 #include <stdio.h>
@@ -18,10 +19,12 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 	{
 		new_file = fopen(filename, "w+");
+		chmod(new_file, S_IRUSR | S_IWUSR);
 		fclose(new_file);
 		return (1);
 	}
 	new_file = fopen(filename, "w+");
+	chmod(new_file, S_IRUSR | S_IWUSR);
 	if (new_file == NULL)
 	{
 		return (-1);
