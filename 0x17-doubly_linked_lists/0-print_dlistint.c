@@ -9,7 +9,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *current;
+	const dlistint_t *current;
 	size_t count;
 
 	current = malloc(sizeof(dlistint_t));
@@ -17,7 +17,7 @@ size_t print_dlistint(const dlistint_t *h)
 	count = 0;
 	while (current != NULL)
 	{
-		print("%d", current->n);
+		printf("%d", current->n);
 		count++;
 		current = current->next;
 	}
