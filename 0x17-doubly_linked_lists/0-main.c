@@ -5,7 +5,7 @@
 
 int main(void)
 {
-	dlistint_t *head;
+	/*dlistint_t *head;
 	dlistint_t *new;
 	dlistint_t hello = {8, NULL, NULL};
 	size_t n;
@@ -24,6 +24,12 @@ int main(void)
 	head = new;
 	n = dlistint_len(head);
 	printf("-> %lu elements\n", n);
-	free(new);
+	free(new);*/
+	dlistint_t *head;
+
+	head = NULL;
+	add_dnodeint_end(&head, 0);
+	add_dnodeint_end(&head, 1);
+	print_dlistint(head);
 	return (EXIT_SUCCESS);
 }
