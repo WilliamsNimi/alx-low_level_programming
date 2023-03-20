@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "calc.h"
+/**
+ * mod- mod function
+ * Description: divides 2 integers
+ * @a: first integer param
+ * @b: second integer param
+ * Return: Returns the result as an int
+ */
+int mod(int a, int b)
+{
+	return (a % b);
+}
