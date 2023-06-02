@@ -1,7 +1,0 @@
-CC=gcc
-SRC=*.c
-OBJ=*.o
-NAME=school
-RM=clean
-all: $(CC) $(SRC) -o $(NAME)
-$(RM): rm $(OBJ)
